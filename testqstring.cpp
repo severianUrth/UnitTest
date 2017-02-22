@@ -61,6 +61,8 @@ void TestQString::toUpper()
 {
     QString str = "Hello";
     QCOMPARE(str.toUpper(), QString("HELLO"));
+    str = AbCdEf;
+    QCOMPARE(str.toUpper(), QString("ABCDEF"));
 }
 
 QTEST_MAIN(TestQString)
